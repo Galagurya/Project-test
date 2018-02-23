@@ -4,60 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YOGA</title>
+    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="menu center">
         
             <ul>
-                <li class="active"><a href="#">About us</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li ><a href="#about">About us</a></li>
+                <li><a href="#trial">Reservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li class="logo">
-                    <img src="img/logo-img.png" alt="1">
+<!--                    <img src="img/logo-img.png" alt="1">-->
                     
                 </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Elements</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#our">Blog</a></li>
+                <li><a href="#features">Elements</a></li>
+                <li><a href="#prices">Shop</a></li>
             </ul>
     </div>  
 
-    <div class="trial center">
+    <div class="trial center" id="trial">
         <div class="trial_cotent">
            <div class="trial__text">
                 <h1>Just Balance <br>your Mind & Body </h1>
                 <p>Create the healthy living for yourself</p>
             </div>
-            <form action="" class="trial__form">
+            <form id="trial_form" action="" class="trial__form">
                 <span>Trial Class</span>
-                <ul>
-                    <li>
-                        <input type="text" placeholder="Enter your name">
-                    </li>
-                    <li> 
-                        <input type="text" placeholder="Enter your phone">
-                    </li>
-                    <li>
-                       <select class="cs-select cs-skin-rotate">
-                            <option value="1">Стегозавр</option>
-                            <option value="2">Велоцираптор</option>
-                            <option value="3">Спинозавр</option>
-                            <option value="4">Археоптерикс</option>
-                            <option value="5">Апатозавр</option>
-                        </select>
-                    </li>
-                    <li>
-                         <input type="submit" value="Try it">
-                    </li>
-                </ul> 
                 
+                    <label>
+                        <input type="text" placeholder="Enter your name">
+                    </label>
+                   <label>
+                        <input type="text" placeholder="Enter your phone">
+                    </label>
+                 <label>
+                       <select class="cs-select cs-skin-rotate">
+                            <option value="1">Chose your class</option>
+                            <option value="2">Chose your class1</option>
+                            <option value="3">Chose your class2</option>
+                            <option value="4">Chose your class3</option>
+                            <option value="5">Chose your class4</option>
+                        </select>
+                    </label>
+                   <label>
+                        <input type="submit" value="Try it">
+                    </label>
             </form>
             
         </div>
     </div>
   
-    <div class="our center">
+    <div class="our center" id="our">
         <div class="our_cotent">
             <h2 class="our__title">YOGA FEATURE PROGRAM</h2>
             <span class="our__caption">Our Classes</span>
@@ -105,7 +105,7 @@
         </div>
     </div>
   
-    <div class="gallery">
+    <div class="gallery" id="gallery">
 	<div class="gallery__list">
 		<img src="img/gallery1.png" alt="1" class="gallery__list_img">
 		<span class="gallery__list-hover">
@@ -156,7 +156,7 @@
 	</div>
 </div>  
     
-    <div class="about-us">
+    <div class="about-us" id="about">
        
             <div class="about-us__info">
                 <span class="info__title">About us</span>
@@ -164,11 +164,20 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
                 </p>
             </div>
-            <div class="about-us__slider"></div>
+            <div class="about-us__slider">
+                <div class="owl-carousel owl-theme">
+                    <div class="slider__element">
+                        <img src="img/about_slide.png" alt="about us">
+                    </div>
+                    <div class="slider__element">
+                        <img src="img/gallery2.png" alt="about us">
+                    </div>
+                </div>
+            </div>
         
     </div>
       
-    <div class="features center">
+    <div class="features center" id="features">
         <div class="features_content">
             <div class="features__item" >
                 <span class="item__img">
@@ -253,7 +262,7 @@
         </div>
     </div>
     
-    <div class="prices center">
+    <div class="prices center" id="prices">
         <div class="prices_content">
             <div class="prices__list">
                 <div class="prices__list-item">
@@ -266,7 +275,7 @@
                             <li>ENTRY TIME: 8A.M – 8P.M</li>
                             <li>NUTRITION ADVICER: NO</li>
                         </ul>
-                        <a href="#" class="list-item__body_button">Buy now </a>
+                        <a href="" class="list-item__body_button">Buy now </a>
                     </div>
                 </div>
                 <div class="prices__list-item">
@@ -279,7 +288,7 @@
                             <li>ENTRY TIME: 8A.M – 8P.M</li>
                             <li>NUTRITION ADVICER: NO</li>
                         </ul>
-                        <a href="#" class="list-item__body_button">Buy now </a>
+                        <a href="" class="list-item__body_button">Buy now </a>
                     </div>
                 </div>
                 <div class="prices__list-item">
@@ -292,17 +301,68 @@
                             <li>ENTRY TIME: 8A.M – 8P.M</li>
                             <li>NUTRITION ADVICER: NO</li>
                         </ul>
-                        <a href="#" class="list-item__body_button">Buy now </a>
+                        <a href="" class="list-item__body_button">Buy now </a>
                     </div>
                 </div>
             </div>
             
-            <div class="prices__slider"></div>
+            
+            <div class="prices__slider">
+               <div class="owl-carousel owl-theme">
+                    <div class="slider__element">
+                        <img src="img/photo_trainer1.png" alt="1">
+                        <div class="element_quote">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="element_quote__sign"> 
+                                <span> Trainer </span>
+                               Laura Shepard
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__element">
+                        <img src="img/photo_trainer1.png" alt="1">
+                        <div class="element_quote">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="element_quote__sign"> 
+                                <span> Trainer </span>
+                               Laura Shepard
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__element">
+                        <img src="img/photo_trainer1.png" alt="1">
+                        <div class="element_quote">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="element_quote__sign"> 
+                                <span> Trainer </span>
+                               Laura Shepard
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-slider">
+                    <div class="owl-carousel owl-theme">
+                        <div class="slider__element">
+                            <img src="img/photo_trainer2.png" alt="Sara Taylor">
+                            <div class="trainer-slider__info">
+                               Sara Taylor <span>Trainer</span>
+                            </div>
+                        </div>
+                        <div class="slider__element">
+                            <img src="img/photo_trainer2.png" alt="Sara Taylor">
+                            <div class="trainer-slider__info">
+                               Sara Taylor <span>Trainer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    
-    
+
     
     <div class="footer center ">
        <div class="footer_content">
@@ -343,13 +403,29 @@
             </div>
         </div>
     </div>
+    
     <div class="copyright center">
         <p>Copyright  ©  2016-2017 Yoga classes</p>
     </div>
     
     
-    
-    <script src="libs/jquery-3.0.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
