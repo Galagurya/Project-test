@@ -24,14 +24,14 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menu {
   position: fixed;
@@ -44,7 +44,7 @@
   background-repeat: no-repeat;
   background-position: 52% 50%;
   -webkit-box-shadow: 0px 4px 7px rgba(17, 17, 17, 0.15);
-  box-shadow: 0px 4px 7px rgba(17, 17, 17, 0.15);
+          box-shadow: 0px 4px 7px rgba(17, 17, 17, 0.15);
 }
 .menu ul {
   display: inline-block;
@@ -63,15 +63,12 @@
 .menu .logo {
   width: 200px;
 }
-.menu .active,
 .menu li:hover {
   position: relative;
 }
-.menu .active a,
 .menu li:hover a {
   color: #5b6ceb;
 }
-.menu .active a:after,
 .menu li:hover a:after {
   position: absolute;
   content: " ";
@@ -81,7 +78,7 @@
   bottom: -3px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .trial {
   margin-top: 100px;
@@ -132,6 +129,15 @@
   border-radius: 20px;
   -webkit-box-shadow: 4px 4px 7px rgba(17, 17, 17, 0.15);
           box-shadow: 4px 4px 7px rgba(17, 17, 17, 0.15);
+  position: relative;
+}
+.trial .trial__form label.error {
+  color: red;
+  font-family: 'OpenSans-Italic';
+  font-size: 12px;
+  margin-top: -20px;
+  position: absolute;
+  top: 105px;
 }
 .trial .trial__form span {
   color: #5b6ceb;
@@ -140,11 +146,7 @@
   margin-bottom: 30px;
   display: block;
 }
-.trial .trial__form label {
-  padding-bottom: 20px;
-  display: block;
-}
-.trial .trial__form label input[type="text"] {
+.trial .trial__form input[type="text"] {
   width: 100%;
   padding: 15px 10px;
   border-radius: 5px;
@@ -154,8 +156,13 @@
   outline: none;
   background: #f2f2f2;
   color: #555555;
+  margin-bottom: 20px;
+  display: block;
 }
-.trial .trial__form label input[type="submit"] {
+.trial .trial__form input[type="text"].error {
+  background: rgba(250, 0, 0, 0.22);
+}
+.trial .trial__form input[type="submit"] {
   float: right;
   margin-top: 10px;
   padding: 13px 60px;
@@ -166,8 +173,10 @@
   font-size: 16px;
   cursor: pointer;
   color: #fff;
+  margin-bottom: 20px;
+  display: block;
 }
-.trial .trial__form label select {
+.trial .trial__form select {
   width: 100%;
   padding: 15px 10px;
   border-radius: 5px;
@@ -175,6 +184,8 @@
   outline: none;
   background: #f2f2f2;
   color: #555555;
+  margin-bottom: 20px;
+  display: block;
 }
 .our {
   min-height: 1000px;
@@ -187,16 +198,16 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .our .our__title {
   font-family: 'OpenSans-Bold';

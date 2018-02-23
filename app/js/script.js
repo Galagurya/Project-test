@@ -42,7 +42,18 @@
         $('#trial_form').submit(function(event) {
             event.preventDefault();
             $(this).validate();      
-            console.log(1);
+            $.validator.addClassRules({
+               required_name: {
+                    required: true,
+                    minlength: 3
+                },
+                required_phone: {
+                    required: true,
+                    minlength: 5
+                }
+            });
+            
+            
         })
     });
     
